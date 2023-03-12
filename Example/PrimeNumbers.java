@@ -2,7 +2,8 @@ package Example;
 
 import java.util.Scanner;
  
-public class PrimeNumbers {
+public class PrimeNumbers 
+{
  
     public static void main(String[] args) 
     {
