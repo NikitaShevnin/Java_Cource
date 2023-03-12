@@ -11,6 +11,7 @@ public class Seminar1_task2_sequence
     public static void main(String[] args) 
     {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Введите значения цифер (ввод 0 прекратит этот цикл)");
         int sum = 0;
         int a = scan.nextInt();
         int b;
