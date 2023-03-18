@@ -1,3 +1,5 @@
+package Seminar1.HomeWork;
+
 public class Seminar1_task1_Reverese
 {
     public static String reverseTextString(String str) 
