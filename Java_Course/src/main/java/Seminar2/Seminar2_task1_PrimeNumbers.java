@@ -1,38 +1,41 @@
-// Условия задачи: 
-// 1) Дана последовательность N целых чисел. Найти сумму простых чисел.
+package Seminar2;
 
-/*
-import java.util.Arrays;
-import java.util.stream.IntStream;
 import java.util.Scanner;
-import java.util.List;
-import java.util.ArrayList;
 
-public class Seminar2_task1_PrimeNumbers 
-{
-    public static void range (String[] args) throws java.io.IOException
-    {
-        // заложил диапазон значений от 1 до n
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите число n: ");
-        int n = in.nextInt();
-        int [] arr = IntStream.rangeClosed(1, n).toArray();
-        int [] summ;
-        if (isPrime (arr))
-        in.close();
+/**
+ * 1) Дана последовательность N целых чисел. Найти сумму простых чисел.
+ */
+
+public class Seminar2_task1_PrimeNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println("sum = " + sumSimpleSequence(n));
     }
 
-    private static static isPrime (int n) // проверка на истинность простое ли это число
-    {
-        int temp;
-        if (n == 1) return false;
-        for (int i = 2; i <= n / 2; i++) 
-        {
-            temp = n % i;
-            if (temp == 0) return false;
+    /**
+     * @param n длина последовательности
+     * @return возвращаем в предыдущий метод накопленную сумму простых чисел после работы цикла for
+     */
+    public static int sumSimpleSequence(int n){
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            int a = sc.nextInt();
+            if (isSimple(a)) sum += a;
+        }
+        return sum;
+    }
+    /**
+     * Проверка числа на простоту производится в этом алгоритме.
+     * @param a проверяемое число
+     * @return является ли число простым
+     */
+    public static boolean isSimple(int a) {
+        Double sq = Math.sqrt(a);
+        for (int i = 2; i <= sq.intValue(); i++) {
+            if (a % i == 0) return false;
         }
         return true;
     }
 }
-
- */
