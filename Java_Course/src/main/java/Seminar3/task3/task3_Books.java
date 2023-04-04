@@ -29,12 +29,11 @@ public class task3_Books
         listBook.add(book4);
 
         BigInteger bigInteger;
-        for (BooksArray book : listBook)
-        {
+
+        for (BooksArray book : listBook) {
             bigInteger = BigInteger.valueOf(book.getNumberPages());
             if (bigInteger.isProbablePrime((int) Math.log(book.getNumberPages())) && book.getLastname().contains("а")
-                    && book.getYear() >= 2010)
-            {
+                    && book.getYear() >= 2010) {
                 System.out.println(book.getBookName());
             }
         }
