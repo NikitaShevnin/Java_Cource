@@ -1,6 +1,6 @@
 package SeminarOOP1.ClassWork.Ex1VendingMachine;
 
-public class Soda extends Product{
+public class Soda extends Product {
 
     public Soda(String name, Double price, Double volumeLitter) {
         super(name, price);

@@ -1,6 +1,6 @@
 package SeminarOOP1.ClassWork.Ex1VendingMachine;
 
-public class Snack extends Product{
+public class Snack extends Product {
     public Snack(String name, Double price, Integer calorie) {
         super(name, price);
         Calorie = calorie;
