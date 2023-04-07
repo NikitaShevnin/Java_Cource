@@ -1,9 +1,7 @@
 package SeminarOOP1.HomeWork.Operation;
-/**
- * реализовать перегруженный метод getProduct(int name, int volume, int temperature) выдающий продукт
- * соответствующий имени, объему и температуре.
- */
-public class Product {
+
+public abstract class Product {
+
     public Product(String name, Double price) {
         this.name = name;
         this.price = price;
@@ -11,6 +9,15 @@ public class Product {
 
     private String name;
     private Double price;
+    private Double Volume;
+
+    public Double getVolume() {
+        return Volume;
+    }
+
+    public void setVolume(Double volume) {
+        Volume = volume;
+    }
 
     public String getName() {
         return name;
