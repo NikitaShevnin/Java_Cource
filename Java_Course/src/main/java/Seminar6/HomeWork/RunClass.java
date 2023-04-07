@@ -4,11 +4,10 @@ import Seminar6.HomeWork.Operation.HDSFilter;
 import Seminar6.HomeWork.Operation.NameFilter;
 import Seminar6.HomeWork.Operation.OSFilter;
 import Seminar6.HomeWork.Operation.OZUFilter;
-import lombok.AllArgsConstructor;
 
-import static Seminar6.HomeWork.Operation.OZUFilter.SearchOZU;
+
 import java.util.Scanner;
-@AllArgsConstructor
+
 
 /**
  * Задание :
@@ -27,9 +26,9 @@ import java.util.Scanner;
 public class RunClass {
     public static void main (String[] args) {
         System.out.println(
-                "1 - ОЗУ, " +
-                "2 - Объем ЖД, " +
-                "3 - Операционная система, " +
+                "1 - ОЗУ \n" +
+                "2 - Объем ЖД \n" +
+                "3 - Операционная система \n" +
                 "4 - Название ноутбука; ");
         System.out.print ("Введите цифру, соответствующую необходимому критерию: ");
         Scanner sc = new Scanner(System.in);
