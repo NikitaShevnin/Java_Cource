@@ -1,4 +1,4 @@
-package Seminar6.HomeWork.Operation;
+package SeminarOOP2.hw.Operation;
 
 import java.util.stream.Stream;
 

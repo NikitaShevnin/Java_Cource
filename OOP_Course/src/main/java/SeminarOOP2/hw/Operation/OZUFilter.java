@@ -1,10 +1,10 @@
-package Seminar6.HomeWork.Operation;
+package SeminarOOP2.hw.Operation;
 
 import java.util.stream.Stream;
 import java.util.Scanner;
 
 public class OZUFilter {
-    public static void SearchOZU (String[] args) {
+    public void SearchOZU () {
         // фильтр на ОЗУ
         Stream<NotebookData> OZUStream = Stream.of(
                 new NotebookData("dexp", 4, 128, "windows"),
