@@ -11,8 +11,8 @@ public class CoffeMachine extends Product {
         list = new ArrayList<Product>();
     }
 
-    public CoffeMachine(String name, Double price) {
-        super(name, price);
+       public CoffeMachine(String name, Double price, Double volume) {
+        super(name, price, volume);
     }
 
     public void addProduct (Product newItem){
