@@ -2,9 +2,10 @@ package SeminarOOP1.HomeWork.Operation;
 
 public abstract class Product {
 
-    public Product(String name, Double price) {
+    public Product(String name, Double price, Double volume) {
         this.name = name;
         this.price = price;
+        Volume = volume;
     }
 
     private String name;
