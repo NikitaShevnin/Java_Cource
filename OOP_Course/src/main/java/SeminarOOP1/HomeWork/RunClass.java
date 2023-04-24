@@ -22,8 +22,8 @@ public class RunClass {
 
         apparat.addProduct(new HotDrinkTemp("Латте", 120.50, 90, 0.33));
         apparat.addProduct(new HotDrinkTemp("Капучино", 144.50, 80, 0.4));
-        apparat.addProduct(new Drinks("Милкшейк", 200.00));
-        apparat.addProduct(new Drinks("Черный чай", 60.40));
+        apparat.addProduct(new Drinks("Милкшейк", 200.00, 0.5));
+        apparat.addProduct(new Drinks("Черный чай", 60.40,0.4));
 
         ArrayList list = apparat.getProduct("Латте",0.33, 90);
         System.out.println(list);

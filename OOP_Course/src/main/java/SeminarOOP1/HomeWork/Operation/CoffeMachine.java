@@ -8,7 +8,8 @@ public class CoffeMachine extends Product {
     private ArrayList <Product> list;
 
     public CoffeMachine() {
-        list = new ArrayList<Product>();
+        super("Latte", 150.10, 0.5);
+        list = new ArrayList<>();
     }
 
        public CoffeMachine(String name, Double price, Double volume) {

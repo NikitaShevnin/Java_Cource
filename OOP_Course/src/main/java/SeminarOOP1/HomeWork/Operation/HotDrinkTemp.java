@@ -2,7 +2,7 @@ package SeminarOOP1.HomeWork.Operation;
 
 public class HotDrinkTemp extends Drinks{
     public HotDrinkTemp(String name, Double price, Integer temperatura, Double volume) {
-        super(name, price);
+        super(name, price, volume);
         Temperatura = temperatura;
         Volume = volume;
     }
