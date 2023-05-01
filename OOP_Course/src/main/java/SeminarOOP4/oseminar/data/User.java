@@ -2,7 +2,7 @@ package SeminarOOP4.oseminar.data;
 
 import java.time.LocalDate;
 
-public class User {
+public class User{
     private String firstName;
     private String secondName;
     private String patronymic;
