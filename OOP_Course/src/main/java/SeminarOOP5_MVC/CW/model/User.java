@@ -1,12 +1,24 @@
 package SeminarOOP5_MVC.CW.model;
 
 public class User {
-    private String name;
-    private int age;
+    private Integer userID;
 
-    public User(String name, int age) {
+    private String name;
+
+    private Integer age;
+
+    public User(Integer userID, String name, Integer age) {
+        this.userID = userID;
         this.name = name;
         this.age = age;
+    }
+
+    public Integer getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
     public String getName() {
@@ -17,7 +29,7 @@ public class User {
         this.name = name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
@@ -31,8 +43,9 @@ public class User {
      */
     @Override
     public String toString() {
-        return "user{" +
-                "name='" + name + '\'' +
+        return "User{" +
+                "userID=" + userID +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';
     }
