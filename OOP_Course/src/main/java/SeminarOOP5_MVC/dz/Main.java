@@ -1,5 +1,7 @@
 package SeminarOOP5_MVC.dz;
 
+import SeminarOOP5_MVC.ExSolution.view.BankView;
+
 /**
  * Задание: Реализовать систему работы банковского
  * приложения.
@@ -11,6 +13,8 @@ package SeminarOOP5_MVC.dz;
  */
 public class Main {
     public static void main(String[] args) {
-
+        BankView bankView = new BankView();
+        BankView.showUserMenu;
+        BankView.userMenu;
     }
 }

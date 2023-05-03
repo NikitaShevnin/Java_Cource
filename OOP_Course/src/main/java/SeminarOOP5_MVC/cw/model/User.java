@@ -1,4 +1,4 @@
-package SeminarOOP5_MVC.CW.model;
+package SeminarOOP5_MVC.cw.model;
 
 public class User {
     private Integer userID;
@@ -39,7 +39,7 @@ public class User {
 
     /**
      * метод toString используем для корректной выдачи данных
-     * @return Возвращаемые значения переменных Name и Age.
+     * @return Возвращаемые значения переменных Name, Age и userID.
      */
     @Override
     public String toString() {

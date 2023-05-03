@@ -20,6 +20,7 @@ public class Bank {
     }
 
     public boolean userIdExist(int id){
+
         return id < getSize();
     }
     public User getUserById(int id){

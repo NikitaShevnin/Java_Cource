@@ -1,12 +1,12 @@
-package SeminarOOP5_MVC.CW.controller;
+package SeminarOOP5_MVC.cw.controller;
 
-import SeminarOOP5_MVC.CW.model.User;
-import SeminarOOP5_MVC.CW.service.UserService;
+import SeminarOOP5_MVC.cw.model.User;
+import SeminarOOP5_MVC.cw.service.UserService;
 
 public class UserController {
     UserService userService = new UserService();
     public void saveNewUser(int userID, String name, int age){
-        userService.saveUser(new User(userID, name, age)); // (!) по дугому написанно просто поставили значение ID 1
+        userService.saveUser(new User(userID, name, age));
     }
     public void deleteUserParam(User user){
         userService.deleteFromRepo(user);

@@ -1,6 +1,6 @@
-package SeminarOOP5_MVC.CW.repository;
+package SeminarOOP5_MVC.cw.repository;
 
-import SeminarOOP5_MVC.CW.model.User;
+import SeminarOOP5_MVC.cw.model.User;
 
 import java.io.FileWriter;
 import java.util.ArrayList;
